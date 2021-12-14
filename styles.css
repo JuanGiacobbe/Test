@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px;
+    border: 2px solid red;
+}
+
+.todo{
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.add-btn{
+    padding: 3.5px;
+    border-radius: 8px;
+    border: 1.5px solid #265aad;
+    background-color: #fff;
+    color: #265aad;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+.add-btn:hover{
+    border: 1.5px solid #fff;
+    background-color: #265aad;
+    color: #fff;
+}
+
+.list{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 20px;
+    margin: 5px;
+    padding: 20px 0 20px 20px;
+}
+
+.text{
+    border: 1px solid #ccc;
+    width: 75%;
+    margin-right: 6px;
+    border-radius: 8px;
+}
+
+.delete-btn{
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 25%;
+    height: 35px;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #b80b14;
+    border: 2px solid #b80b14;
+    transition: all .3s ease;
+}
+.delete-btn:hover{
+    background-color: #b80b14;
+    color: #fff;
+    border: 2px solid #fff;
+}

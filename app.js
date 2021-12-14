@@ -1,33 +1,40 @@
 // DOM SECTION
 
 const todo = document.querySelector('.todo');
-const btn = document.querySelector('.btn');
+const addBtn = document.querySelector('.add-btn');
 const list = document.querySelector('.list');
 
-btn.addEventListener('click', (e) => {
+// FUNCTIONALITIES
+
+addBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    let p = document.createElement('p');
-    let li = document.createElement('li');
-    let deletebtn = document.createElement('button');
+    if(todo.value == ''){
+        alert('complete the input with a todo!');
+    }else{
+        let p = document.createElement('p');
+        let li = document.createElement('li');
+        let deleteBtn = document.createElement('button');
 
-    p.textContent = todo.value;
+        p.textContent = todo.value;
 
-    li.appendChild(p);
-    li.appendChild(deletebtn);
-    list.appendChild(li);
+        li.appendChild(p);
+        li.appendChild(deleteBtn);
+        list.appendChild(li);
 
-    li.classList.add('elements');
-    deletebtn.classList.add('deletebtn');
+        p.classList.add('text');
+        li.classList.add('elements');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.textContent = 'delete';
 
-
-    deletebtn.addEventListener('click', (e) => {
+        deleteBtn.addEventListener('click', (e) => {
         e.preventDefault();
 
         list.removeChild(li);
-    });
+        });
 
 
-    todo.value = '';
+        todo.value = '';
+        }
 })
 
