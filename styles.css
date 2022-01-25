@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+/* GENERAL STYLES */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -12,33 +14,48 @@ li{
 }
 
 .main{
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 90px;
-    border: 2px solid red;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
 }
+
+.title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 
 .todo{
     border-radius: 5px;
     border: 1px solid red;
-    padding: 5px;
+    padding: 10px;
+    width: 40vw;
+    font-size: 1.1rem;
+}
+.todo::placeholder {
+    font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
 .add-btn{
-    padding: 3.5px;
+    width: 9vw;
+    padding: 7px;
     border-radius: 8px;
     border: 1.5px solid #265aad;
     background-color: #fff;
     color: #265aad;
-    font-size: 15px;
+    font-size: 1.1rem;
     cursor: pointer;
     text-transform: capitalize;
     transition: all .3s ease;
 }
 .add-btn:hover{
-    border: 1.5px solid #fff;
     background-color: #265aad;
     color: #fff;
 }
@@ -46,23 +63,23 @@ li{
 .list{
     text-align: center;
     margin-top: 20px;
-    width: 100%;
+    width: 50vw;
 }
+
 .elements{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3rem;
-    height: 20px;
-    margin: 5px;
-    padding: 20px 0 20px 20px;
+    padding: 8px;
 }
 
 .text{
-    border: 1px solid #ccc;
-    width: 75%;
+    font-size: 1.2rem;
+    width: 100%;
     margin-right: 6px;
     border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 
 .delete-btn{
@@ -71,7 +88,7 @@ li{
     width: 25%;
     height: 35px;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -82,5 +99,4 @@ li{
 .delete-btn:hover{
     background-color: #b80b14;
     color: #fff;
-    border: 2px solid #fff;
 }
